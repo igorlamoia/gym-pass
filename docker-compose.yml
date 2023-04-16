@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  gym-pass-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=igor_lamoia
+      - POSTGRESQL_PASSWORD=123456
+      - POSTGRESQL_DATABASE=gym_pass
